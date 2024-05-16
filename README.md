@@ -1,12 +1,13 @@
-AlloyTimer
-==========
-AlloyTimer定时器 - 番茄工作法的时间管理应用
+# BlloyTimer![](https://raw.githubusercontent.com/Xiao-La/figures/master/imgs/favicon.png)
 
-By [AlloyTeam](http://www.AlloyTeam.com/)
+Forked from [AlloyTeam/AlloyTimer](https://github.com/AlloyTeam/AlloyTimer), adopted to my own tool.
 
+The final goal is to create a tool that can record, supervise and analyse one's learning behaviours. 
 
-### 番茄工作方法
+## Todo
 
-1. 输入一个任务，将番茄时间设为25分钟点【开始工作】
-2. 专注工作，中途不允许做任何与该任务无关的事，直到番茄时钟响起
-3. 然后短暂休息一下，5分钟左右
+- renew the style
+
+- add user manager and task record database
+
+- add it to my website

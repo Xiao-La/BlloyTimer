@@ -514,7 +514,7 @@ Jx().$package(function(J){
         // make sure the flash movie is visible, otherwise the onload is not fired!
         try {
             J.swfobject.embedSWF(path, 'swfSound_Flash_div', '1', '1', '8.0.0',
-                    J.path+'style/swf/expressInstall.swf', flashvars, params, attributes);
+                    J.path+'swf/expressInstall.swf', flashvars, params, attributes);
         } catch (e) {
             J.error('J.Sound module error: ' + e.message, 'Sound');
             // alert( 'Seems like you are missing swfobject! - Please include
@@ -550,9 +550,10 @@ Jx().$package(function(J){
      * @ignore
      */
     soundModeDetector = function(){
-        if(J.browser.chrome){
-            return 1;//chrome新版有问题, 播放不了audio
-        }else if(J.platform.iPad) {
+        //if(J.browser.chrome){
+            //return 1;//chrome新版有问题, 播放不了audio
+        //}else 
+		if(J.platform.iPad) {
             return 4;
         }else if(window.Audio && (new Audio).canPlayType('audio/mpeg')){
             return 3; //以上浏览器的高版本支持audio对象播放mp3格式

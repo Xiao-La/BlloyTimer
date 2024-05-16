@@ -25,11 +25,17 @@
 
 
 body{
-	font-family: Tahoma, Arial, "MS Trebuchet", sans-serif;
-	font-size:14px;
+
+	font-family:Michroma,'Segoe UI Light','Segoe UI','Segoe UI WP','Microsoft Jhenghei',Tahoma, Arial, "MS Trebuchet", '΢���ź�',sans-serif;
+	font-size:16px;
+	line-height:1.8;
+	cursor:default;
+	color:#666;
+	
+	
 }
 input {
-	display: block;
+
 	margin:10px auto;
 }
 button{
@@ -37,57 +43,163 @@ button{
 	margin:10px auto;
 }
 label{
-	display: block;
-	margin:10px auto;
+	cursor:pointer;
 }
 
+ul{
+	list-style:none;
+}
+
+.btn{
+	margin:10px auto 10px;
+}
+
+#main{
+	margin-top:40px;
+	-webkit-animation: alloyAnimation 1.2s cubic-bezier(.4,1.8,.5,.8) 0 1;
+	-moz-animation: alloyAnimation 1.2s cubic-bezier(.4,1.8,.5,.8) 0 1;
+	-ms-animation: alloyAnimation 1.2s cubic-bezier(.4,1.8,.5,.8) 0 1;
+	-o-animation: alloyAnimation 1.2s cubic-bezier(.4,1.8,.5,.8) 0 1;
+	animation: alloyAnimation 1.2s cubic-bezier(.4,1.8,.5,.8) 0 1;
+}
+
+@-webkit-keyframes alloyAnimation {
+	from {
+		margin-top:-200px;
+	}
+	to {
+		margin-top:40px;
+	}
+}
+@-moz-keyframes alloyAnimation {
+	from {
+		margin-top:-200px;
+	}
+	to {
+		margin-top:40px;
+	}
+}
+@keyframes alloyAnimation {
+	from {
+		margin-top:-200px;
+	}
+	to {
+		margin-top:40px;
+	}
+}
 
 #title{
-	margin:10px auto;
-	width:500px;
-	text-align:center;
-	font-size:60px;
+	margin:10px auto 10px auto;
+	font-family: 'Courier New';
+	font-size: 50px;
+	font-weight: bold;
 }
-#remainTime{
+.remainTime{
 	text-align:center;
-	font-size:180px;
+	font-family: Georgia;
+	font-size:160px;
+	line-height:1.5;
+	color: #999;
 }
-#progressBarBorder,
-#progressBar{
-
+.remainTimeActive{
+	color:#3C8CFF;
+}
+#progressBarBox {
+	margin:20px auto 50px auto;
 	width:500px;
 	height:15px;
 	overflow: hidden;
-	
-}
-#progressBarBorder{
-	display: block;
-	margin:10px auto;
-	border:1px solid #fff;
-	box-shadow:1px 1px 15px #000;
-
+	box-shadow: inset 0px 0px 3px;
 }
 #progressBar{
-	background:blue;
+	width:100%;
 }
+
+
 #control{
 	margin:10px auto;
-	width:500px;
+	width:600px;
+	text-align:center;
+}
+
+#more{
+	margin:10px auto;
+	width:600px;
+	text-align:center;
+}
+
+#currentTask{
+	font-size: 16px;
+	margin:10px;
+}
+
+#taskName{
+	display: block;
+	margin: 10px auto 30px auto;
+	height: 20px;
+	width: 300px;
+	padding: 10px 10px;
+	font-weight: bold;
+	text-align: center;
+	resize:none
 }
 
 
-.taskLeave{
-	background:yellow;
+#startWorkButton{
+	display:block;
+	height: 50px;
+	width: 200px;
+}
+#startRestButton{
+	display:block;
+	height: 50px;
+	width: 200px;
 }
 
-.taskDone{
-	background:blue;
+#stopButton{
+	display:block;
+	height: 50px;
+	width: 200px;
 }
-.taskStop{
-	background:red;
+#settingBoard{
+	display:none;
+	
 }
-
+#loopCheckboxText{
+	line-height: 22px;
+	float: left;
+	margin: 0px 10px 0px 0;
+}
+#isLoopCheckbox{
+	float:left;
+}
+#workTimeText{
+	float: left;
+	margin:10px 0 0 0;
+	line-height: 20px;
+}
+#workTime{
+	width:80px;
+	margin:5px 0 5px 10px;
+	cursor:n-resize;
+}
+#restTimeText{
+	float: left;
+	margin:10px 0 0 0;
+	line-height: 20px;
+}
+#restTime{
+	width:80px;
+	margin:5px 0 5px 10px;
+	cursor:n-resize;
+}
+#taskListBoard{
+	display:none;
+	
+}
 .copyright{
 	margin: 50px auto;
 	text-align:center;
+	font-family: Tahoma, Arial, "MS Trebuchet", '΢���ź�',sans-serif;
+	font-size:12px;
 }
