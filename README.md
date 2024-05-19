@@ -11,3 +11,5 @@ The final goal is to create a tool that can record, supervise and analyse one's 
 - renew the style
 
 - add user manager and task record database
+
+- add statistic chart generator
